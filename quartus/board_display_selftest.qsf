@@ -1,0 +1,13 @@
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M08SCM153C8G
+set_global_assignment -name TOP_LEVEL_ENTITY board_display_selftest
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY selftest_output
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name VERILOG_FILE ../rtl/reset_release.v
+set_global_assignment -name VERILOG_FILE ../rtl/board_display_selftest.v
+set_global_assignment -name SDC_FILE board_display_selftest.sdc
+source pins_step_max10.tcl
+
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
